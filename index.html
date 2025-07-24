@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DigiTop | Followers & Aplikasi Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1c1b29;
+      --accent: #915eff;
+      --gold: #f0c040;
+      --text: #e0e0e0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: var(--primary);
+      color: var(--text);
+    }
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #1c1b29, #2e2d42);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 1.8s ease;
+    }
+    header h1 {
+      font-size: 3em;
+      color: var(--gold);
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .cta-btn {
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cta-btn:hover {
+      transform: scale(1.07);
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .produk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      animation: slideUp 1s ease;
+    }
+    .produk-card {
+      background: #2a293b;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .produk-card:hover {
+      transform: translateY(-10px);
+    }
+    .whatsapp-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .whatsapp-link:hover {
+      background: #1da851;
+    }
+    footer {
+      padding: 40px;
+      background: #111;
+      color: #ccc;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      .produk-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>DigiTop</h1>
+      <p>Followers & Aplikasi Premium dengan Layanan Terbaik</p>
+      <button class="cta-btn" onclick="document.getElementById('produk').scrollIntoView({behavior:'smooth'})">Lihat Produk</button>
+    </div>
+  </header>
+
+  <section id="produk">
+    <h2>Produk Unggulan Kami</h2>
+    <div class="produk-grid">
+      <div class="produk-card">
+        <h3>Alight Motion Pro</h3>
+        <p>Mulai dari Rp7.000</p>
+      </div>
+      <div class="produk-card">
+        <h3>Followers Instagram</h3>
+        <p>Mulai dari Rp15.000</p>
+      </div>
+      <div class="produk-card">
+        <h3>Followers TikTok</h3>
+        <p>Mulai dari Rp15.000</p>
+      </div>
+      <div class="produk-card">
+        <h3>Canva Pro</h3>
+        <p>1 bulan akses hanya Rp10.000</p>
+      </div>
+      <div class="produk-card">
+        <h3>CapCut Sharing</h3>
+        <p>1 bulan akses Rp25.000</p>
+      </div>
+      <div class="produk-card">
+        <h3>YouTube Premium</h3>
+        <p>1 bulan akses Rp15.000</p>
+      </div>
+    </div>
+    <a class="whatsapp-link" href="https://wa.me/628979064114" target="_blank">Hubungi Kami via WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; DigiTop 2025 | Powered by DigiTop Dev</p>
+  </footer>
+
+</body>
+</html>
